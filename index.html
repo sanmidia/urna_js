@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Votação</title>
+        <meta charset="UTF-8">
+        <script src="codigo.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <div class="l">
+                <span class="seuvoto">Seu voto para</span>
+                <p class="cargo">Presidente</p>
+                <span class="numeroCand">Número:</span>
+                <form class="form" action="">
+                    <input size="1" id="campo1" value="" maxlength="1" type="text" readonly="readonly"/>
+                    <input size="1" id="campo2" value="" maxlength="1" type="text" readonly="readonly"/>
+                </form>
+                <p>Nome: <span id="voteiNome" class="voteiem"></span> </p>
+                <p>Partido: <span id="voteiPartido" class="voteiem"></span> </p>
+                <p>Vice: <span id="voteiVice" class="voteiem"></span></p>
+            </div>
+            <div class="r">
+                <div class="foto">
+                    <img id="fotoId" src="img.jpg"  alt="">
+                    <span id="fotoNome"></span>
+                    <img id="fotoVice" src="img.jpg"  alt="">
+                    <span id="nomeVice"></span>
+                </div>
+                  
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="tse">
+               JUSTIÇA ELEITORAL
+            </div>
+            <div class="aerakey">
+                <div class="linha-teclado">
+                    <button class="bnt click" onclick="inserir(1)">1</button>
+                    <button class="bnt click" onclick="inserir(2)">2</button>
+                    <button class="bnt click" onclick="inserir(3)">3</button>
+                </div>
+                <div class="linha-teclado">
+                    <button class="bnt click" onclick="inserir(4)">4</button>
+                    <button class="bnt click" onclick="inserir(5)">5</button>
+                    <button class="bnt click" onclick="inserir(6)">6</button>
+                </div>
+                <div class="linha-teclado">
+                    <button class="bnt click" onclick="inserir(7)">7</button>
+                    <button class="bnt click" onclick="inserir(8)">8</button>
+                    <button class="bnt click" onclick="inserir(9)">9</button>
+                </div>
+                <div class="linha-teclado">
+                    <button class="bnt click" onclick="inserir(0)">0</button>
+                </div>
+                <div class="teclado2">
+                    <button class="branco  click">BRANCO</button>
+                    <button class="laranja  click" onclick="corrige()">CORRIGE</button>
+                    <button class="verde" onclick="votar()">CONFIRMA</button>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+    <div class="apuracao">
+        <a href="resultado.html">Apuração</a>
+    </div>
+    
+   
+</body>
+</html>
+
